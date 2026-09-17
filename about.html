@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- The <html> tag is the root element -->
+<html>
+<head>
+  <title>CivicTracker - About Us</title>
+  
+  <!-- Keeping all CSS inside this tag, perfectly matching the index.html styles -->
+  <style>
+    /* Base typography and background colors (matches index.html) */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    /* Centers the main content and limits width to 900px */
+    .container {
+      width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Top Header Styling */
+    .header {
+      background-color: #ffffff;
+      padding: 15px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .header h1 {
+      display: inline-block;
+      margin: 0;
+      color: #333;
+      font-size: 24px;
+    }
+
+    /* Navigation styling using inline-block */
+    .nav {
+      display: inline-block;
+      margin-left: 550px; 
+    }
+    
+    .nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #1976d2;
+      font-weight: bold;
+    }
+
+    /* 
+      Specific styles just for the About page
+    */
+    
+    /* A white box to hold the text content */
+    .content-box {
+      background-color: #ffffff;
+      padding: 30px;
+      margin-top: 40px;
+      border-radius: 8px;
+      border: 1px solid #e0e0e0;
+    }
+    
+    /* Styling the section titles */
+    h2 {
+      color: #1976d2;
+      border-bottom: 2px solid #f4f6f8;
+      padding-bottom: 10px;
+      margin-top: 30px;
+    }
+
+    /* Removing default bullet points from the list */
+    .team-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    /* Styling each team member row */
+    .team-member {
+      background: #f9f9f9;
+      margin-bottom: 10px;
+      padding: 12px 15px;
+      border-left: 4px solid #1976d2; /* Adds a nice blue accent line on the left */
+      border-radius: 4px;
+      font-size: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header with Navigation -->
+  <div class="header">
+    <div class="container">
+      <h1>CivicTracker</h1>
+      <div class="nav">
+        <!-- Links to navigate between pages -->
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content Area -->
+  <div class="container">
+    <div class="content-box">
+      
+      <!-- Section 1: The Mission -->
+      <h2 style="margin-top: 0;">Our Mission</h2>
+      <!-- <p> stands for paragraph -->
+      <p>Citizens lack a streamlined, hyper-local platform to report infrastructure failures in real-time. CivicTracker bridges the gap between citizens and local authorities by digitizing the reporting process for issues like potholes and broken streetlights, ensuring faster resolution and community accountability.</p>
+
+      <!-- Section 2: The Team -->
+      <h2>Team 5 Members</h2>
+      <!-- <ul> stands for Unordered List -->
+      <ul class="team-list">
+        <!-- <li> stands for List Item -->
+        <li class="team-member"><strong>Madhav Bhartia</strong> - Team Lead (System architecture, frontend logic)</li>
+        <li class="team-member"><strong>Aditya Singh</strong> - UI/UX (Figma Design)</li>
+        <li class="team-member"><strong>Tanmay Mudgal</strong> - Software Developer (Firmware, Express API routing)</li>
+        <li class="team-member"><strong>Udit Kumar</strong> - Data & UI (MongoDB schemas, dashboard)</li>
+        <li class="team-member"><strong>Ketan Agrawal</strong> - UI/UX (HTML, CSS)</li>
+      </ul>
+
+      <!-- Section 3: Project Info -->
+      <h2>Project Details</h2>
+      <p>Built for CSE 2022: Web Programming (Batch 2025, 3rd Sem).</p>
+
+    </div>
+  </div>
+
+</body>
+</html>
