@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!-- The <html> tag is the root element of the web page -->
+<html>
+<head>
+  <!-- The <head> contains meta-information and styling that isn't directly displayed -->
+  <title>CivicTracker - Home</title>
+  
+  <!-- All CSS is placed inside this <style> tag as requested -->
+  <style>
+    /* Base typography and background colors */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    /* Centers the main content and limits width to 900px */
+    .container {
+      width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Top Header Styling */
+    .header {
+      background-color: #ffffff;
+      padding: 15px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .header h1 {
+      display: inline-block;
+      margin: 0;
+      color: #333;
+      font-size: 24px;
+    }
+
+    /* Navigation styling using inline-block instead of float/flex */
+    .nav {
+      display: inline-block;
+      margin-left: 550px; 
+    }
+    
+    .nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #1976d2;
+      font-weight: bold;
+    }
+
+    /* Main Content Spacing */
+    .content {
+      padding: 30px 0;
+    }
+
+    /* Dashboard Stats Area */
+    .stat-card {
+      display: inline-block;
+      width: 30%;
+      background-color: #ffffff;
+      margin-right: 2%;
+      padding: 20px 0;
+      text-align: center;
+      border-radius: 6px;
+      border: 1px solid #e0e0e0;
+      box-sizing: border-box;
+    }
+    
+    /* Removing margin on the last card so it doesn't drop to the next line */
+    .stat-card-last {
+      margin-right: 0;
+    }
+
+    .stat-card h2 { margin: 0; font-size: 28px; }
+    .stat-card p { margin: 5px 0 0 0; font-size: 12px; font-weight: bold; color: #777; text-transform: uppercase; }
+
+    /* Recent Reports Section */
+    .reports-header {
+      margin-top: 40px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+    }
+
+    .report-card {
+      display: inline-block;
+      width: 48%;
+      background-color: #ffffff;
+      margin-top: 20px;
+      margin-right: 2%;
+      padding: 15px;
+      border-radius: 6px;
+      border: 1px solid #e0e0e0;
+      box-sizing: border-box;
+      vertical-align: top;
+    }
+
+    /* Call to Action Container */
+    .cta-container {
+      text-align: center;
+      background-color: #ffffff;
+      padding: 40px;
+      border: 2px dashed #ccc;
+      border-radius: 8px;
+      margin-top: 30px;
+    }
+
+    /* Prominent Blue Button */
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      color: #1976d2;
+      border: 2px solid #1976d2;
+      background-color: #ffffff;
+      text-decoration: none;
+      border-radius: 20px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    
+    .btn:hover {
+      background-color: #f0f4f8;
+    }
+  </style>
+</head>
+
+<!-- The <body> tag contains all the visible layout of the page -->
+<body>
+
+  <!-- Top Header with Navigation -->
+  <!-- <div> tags act as standard block-level containers for grouping elements -->
+  <div class="header">
+    <div class="container">
+      <!-- <h1> is used for the top-level page heading -->
+      <h1>CivicTracker</h1>
+      <div class="nav">
+        <!-- <a> tags represent anchor links to other pages -->
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content Area -->
+  <div class="container content">
+    
+    <!-- Dashboard Stats Area -->
+    <div>
+      <div class="stat-card" style="border-top: 4px solid #ffcdd2;">
+        <!-- <h2> is used for secondary headings like card numbers and titles -->
+        <h2 style="color: #d32f2f;">4</h2>
+        <!-- <p> tags are used for standard paragraph text -->
+        <p>Reported</p>
+      </div>
+      <div class="stat-card" style="border-top: 4px solid #fff9c4;">
+        <h2 style="color: #f57f17;">2</h2>
+        <p>In Progress</p>
+      </div>
+      <div class="stat-card stat-card-last" style="border-top: 4px solid #c8e6c9;">
+        <h2 style="color: #2e7d32;">11</h2>
+        <p>Resolved</p>
+      </div>
+    </div>
+
+    <h2 class="reports-header">Recent Reports in Your Area</h2>
+
+    <!-- Dummy Text Reports List -->
+    <div>
+      <div class="report-card">
+        <!-- <h3> tags are used for tertiary headings like individual item titles -->
+        <h3>Deep Pothole on Main St</h3>
+        <p style="color: #555;">📍 Main St & 4th Ave</p>
+        <p style="font-size: 12px; color: #999;">2 hours ago</p>
+      </div>
+      <div class="report-card" style="margin-right: 0;">
+        <h3>Broken Streetlight</h3>
+        <p style="color: #555;">📍 Sector 4 Park</p>
+        <p style="font-size: 12px; color: #999;">1 day ago</p>
+      </div>
+    </div>
+
+    <!-- Empty State and Prominent Report Button -->
+    <div class="cta-container">
+      <h3>Your area looks good!</h3>
+      <p>No other issues reported in your area! Be the first to flag a problem.</p>
+      <a href="category.html" class="btn">⊕ Report a New Issue</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
